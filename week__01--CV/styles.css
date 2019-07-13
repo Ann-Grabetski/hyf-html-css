@@ -1,0 +1,91 @@
+body {
+      background-image: url(https://github.com/Ann-Grabetski/hyf-html-css/blob/master/week__01--CV/bg.jpg?raw=true);
+  
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+
+      font: italic 1.15em Garamond, serif;
+      text-align: center;
+      line-height: 1.5em;
+}
+
+li {
+      text-align: left;
+}
+
+h1 {
+      text-transform: uppercase;
+      font-size: 2.35em;
+      line-height: 0.1em;
+}
+
+h2 {
+      text-transform: uppercase;
+      font-size: 1.25em;
+      line-height: 3em;
+}
+
+h3 {
+      text-transform: uppercase;
+      font-size: 0.95em;
+      line-height: 3em;
+}
+
+.gridCard {
+      width: 525px;
+      height: 300px;
+      margin: 120px auto 60px auto;
+      background-image: url(https://github.com/Ann-Grabetski/hyf-html-css/blob/master/week__01--CV/visitingCard.jpg?raw=true);
+      background-size: cover;
+
+      border-radius: 5px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12), 0 10px 20px rgba(0,0,0,0.24);
+  
+      display: grid;
+      grid-template: repeat(3,1fr) / repeat(3,1fr);
+      justify-content: space-evenly;
+}
+
+.gridItem__dev {
+      grid-column: 3;
+}
+
+.gridItem__name {
+      grid-area: 3/ 1/ 3/ 4;
+      background-color: white;
+}
+
+.gridCard p {
+      font-size: 2.25em;
+      font-weight: bold;
+}
+  
+.gridSec--1 {
+      width: 100%;
+      margin: 30px auto 30px auto;    
+  
+      display: grid;
+      grid-template: repeat(2,200px) / repeat(2,350px);
+      justify-content: space-evenly;
+}
+
+.gridItem {
+      padding: 15px 30px;
+      align-self: start;
+}
+
+.gridSec--2 {
+      width: 100%;
+      margin: 30px auto 120px auto;
+  
+      display: grid;
+      grid-template: 90px 200px / repeat(2,350px);
+      justify-content: space-evenly;
+}
+
+.gridSec--2 h2 {
+      margin: 30px auto 30px auto;    
+      grid-column: 1 / span 2;
+}
